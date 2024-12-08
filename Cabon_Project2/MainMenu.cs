@@ -55,6 +55,10 @@ namespace Cabon_Project2
                 leftBorderBtn.Location = new Point(0,currentbtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
+                //Icon Current Child Form
+                iconCurrentChild.IconChar = currentbtn.IconChar;
+                iconCurrentChild.IconColor = color;
+                
             }
         }
         private void DisableButton()
@@ -101,6 +105,21 @@ namespace Cabon_Project2
         private void Page_6_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        private void Reset()
+        {
+            DisableButton();
+            leftBorderBtn.Visible = false;
+            iconCurrentChild.IconChar = IconChar.Home;
+            iconCurrentChild.IconColor = Color.MediumPurple;
+            lblTitleChildForm.Text = "Home";
+            Console.WriteLine("YOU Click LOGO");
         }
     }
 }
