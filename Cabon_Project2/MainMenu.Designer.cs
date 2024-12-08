@@ -40,6 +40,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconCurrentChild = new FontAwesome.Sharp.IconPictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             this.PanelLOGO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LOGO_Home)).BeginInit();
@@ -226,6 +228,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(985, 119);
             this.panel1.TabIndex = 1;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // iconCurrentChild
             // 
@@ -252,11 +255,31 @@
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(220, 119);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(985, 9);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 128);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(985, 503);
+            this.panelDesktop.TabIndex = 3;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 631);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelMenu);
             this.Font = new System.Drawing.Font("Britannic Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -286,6 +309,8 @@
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChild;
         private System.Windows.Forms.Label lblTitleChildForm;
+        private System.Windows.Forms.Panel panelShadow;
+        private System.Windows.Forms.Panel panelDesktop;
     }
 }
 

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace Cabon_Project2
     {
         private IconButton currentbtn;
         private Panel leftBorderBtn;
+        private Form currentChildForm;
 
         public MainMenu()
         {
@@ -23,6 +25,12 @@ namespace Cabon_Project2
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7,60);
             PanelMenu.Controls.Add(leftBorderBtn);
+
+            //Form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
 
@@ -76,6 +84,22 @@ namespace Cabon_Project2
 
             }
         }
+        private void OpenChildForm(Form ChildForm)
+        {
+            if (iconCurrentChild != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = ChildForm;
+            ChildForm.TopLevel = false;
+            ChildForm.FormBorderStyle = FormBorderStyle.None;
+            ChildForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(ChildForm);
+            panelDesktop.Tag = ChildForm;
+            ChildForm.BringToFront();
+            ChildForm.Show();
+            lblTitleChildForm.Text = ChildForm.Text;
+        }
 
         private void Page_Home_Click(object sender, EventArgs e)
         {
@@ -120,6 +144,17 @@ namespace Cabon_Project2
             iconCurrentChild.IconColor = Color.MediumPurple;
             lblTitleChildForm.Text = "Home";
             Console.WriteLine("YOU Click LOGO");
+        }
+
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle,0x112,0xf012,0);
         }
     }
 }
