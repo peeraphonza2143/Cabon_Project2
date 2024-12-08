@@ -30,7 +30,7 @@ namespace Cabon_Project2
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+           // this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
 
@@ -86,7 +86,7 @@ namespace Cabon_Project2
         }
         private void OpenChildForm(Form ChildForm)
         {
-            if (iconCurrentChild != null)
+            if (currentChildForm != null)
             {
                 currentChildForm.Close();
             }
@@ -98,17 +98,20 @@ namespace Cabon_Project2
             panelDesktop.Tag = ChildForm;
             ChildForm.BringToFront();
             ChildForm.Show();
-            lblTitleChildForm.Text = ChildForm.Text;
+            
         }
 
         private void Page_Home_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Home_Page());
+            lblTitleChildForm.Text = "Home";
         }
 
         private void Page_2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            lblTitleChildForm.Text = "Page2";
         }
 
         private void Page_3_Click(object sender, EventArgs e)
@@ -155,6 +158,33 @@ namespace Cabon_Project2
         {
             ReleaseCapture();
             SendMessage(this.Handle,0x112,0xf012,0);
+        }
+
+        private void iconExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void iconmaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState ==FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState=FormWindowState.Normal;
+            }
+        }
+
+        private void iconMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized ;
         }
     }
 }
