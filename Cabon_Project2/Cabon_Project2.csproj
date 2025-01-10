@@ -36,6 +36,9 @@
     <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -53,6 +56,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Create_Project_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_2.Designer.cs">
+      <DependentUpon>Create_Project_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Project_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_3.Designer.cs">
+      <DependentUpon>Create_Project_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Project_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_4.Designer.cs">
+      <DependentUpon>Create_Project_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Project_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_5.Designer.cs">
+      <DependentUpon>Create_Project_5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,13 +92,34 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Create_Project_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_1.Designer.cs">
+      <DependentUpon>Create_Project_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Create_Project_2.resx">
+      <DependentUpon>Create_Project_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_3.resx">
+      <DependentUpon>Create_Project_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_4.resx">
+      <DependentUpon>Create_Project_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_5.resx">
+      <DependentUpon>Create_Project_5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home_Page.resx">
       <DependentUpon>Home_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_1.resx">
+      <DependentUpon>Create_Project_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,6 +153,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-01-07 124636-Photoroom.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

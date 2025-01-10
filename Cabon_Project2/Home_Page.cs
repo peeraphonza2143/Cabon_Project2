@@ -15,6 +15,21 @@ namespace Cabon_Project2
         public Home_Page()
         {
             InitializeComponent();
+       
+
+            //Form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
         }
+
+      
+
+        private void Home_Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

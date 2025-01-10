@@ -15,6 +15,8 @@ namespace Cabon_Project2
 {
     public partial class MainMenu : Form
     {
+        private Timer stateCheckTimer;
+
         private IconButton currentbtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
@@ -22,15 +24,24 @@ namespace Cabon_Project2
         public MainMenu()
         {
             InitializeComponent();
+            InitializeStateChecker();
+
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7,60);
             PanelMenu.Controls.Add(leftBorderBtn);
+
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
 
             //Form
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
-           // this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+            OpenChildForm(new Home_Page());
+            lblTitleChildForm.Text = "Home";
+            
+            // this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
 
@@ -84,6 +95,7 @@ namespace Cabon_Project2
 
             }
         }
+      
         private void OpenChildForm(Form ChildForm)
         {
             if (currentChildForm != null)
@@ -106,12 +118,170 @@ namespace Cabon_Project2
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Home_Page());
             lblTitleChildForm.Text = "Home";
+            
+        }
+        private void InitializeStateChecker()
+        {
+            stateCheckTimer = new Timer();
+            stateCheckTimer.Interval = 500; // Check every 500ms
+            stateCheckTimer.Tick += State_Create_Project;
+            stateCheckTimer.Start();
+        }
+        private void State_Create_Project(object sender, EventArgs e)
+        {
+            if (SharedData.State_data == "1") //Create Project 2
+            {
+                if (SharedData.Last_State == "0")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "1";
+                    OpenChildForm(new Create_Project_1());
+
+                }
+                else if (SharedData.Last_State != "0")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_1());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else if (SharedData.State_data == "2") //Create Project 2
+            {
+                if (SharedData.Last_State == "1")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "2";
+                    OpenChildForm(new Create_Project_2());
+
+                }
+                else if (SharedData.Last_State != "1")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_2());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else if (SharedData.State_data == "3") //Create Project 3
+            {
+                if (SharedData.Last_State == "2")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "3";
+                    OpenChildForm(new Create_Project_3());
+
+                }
+                else if (SharedData.Last_State != "2")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_3());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else if (SharedData.State_data == "4") //Create Project 4
+            {
+                if (SharedData.Last_State == "3")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "4";
+                    OpenChildForm(new Create_Project_4());
+
+                }
+                else if (SharedData.Last_State != "3")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_4());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else if (SharedData.State_data == "5") //Create Project 5
+            {
+                if (SharedData.Last_State == "4")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "5";
+                    OpenChildForm(new Create_Project_5());
+
+                }
+                else if (SharedData.Last_State != "4")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_5());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else
+            {
+
+            }
+
+        }
+        public static class SharedData
+        {
+            public static string State_data { get; set; }
+            public static string Last_State { get; set; }
+        }
+        public static class Json_Create_Project
+        {
+            public static string Json_ProjectName { get; set; }
+            public static string Json_Area { get; set; }
+            public static string Json_Site { get; set; }
+            public static string Json_Division { get; set; }
+            public static string Json_Mnfg { get; set; }
+            public static string Json_Location { get; set; }
+            public static string Json_Prepared { get; set; }
+            public static string Json_Appr { get; set; }
+            public static string Json_ReviewedbyMgt{ get; set; }
+            public static string Json_Review { get; set; }
+            public static string Json_Material { get; set; }
+            public static string Json_Bulid { get; set; }
+            public static string Json_BasicMat { get; set; }
+            public static string Json_Process { get; set; }
+            public static string Json_Stateofoper { get; set; }
+            public static int Json_GenProcess1 { get; set; } = 0;
+            public static int Json_GenProcess2 { get; set; } = 0;
+            public static int Json_GenProcess3 { get; set; } = 0;
+            public static int Json_GenProcess4 { get; set; } = 0;
+            public static int Json_GenProcess5 { get; set; } = 0;
+            public static int Json_GenProcess6 { get; set; } = 0;
+            public static int Json_GenProcess7 { get; set; } = 0;
         }
 
-        private void Page_2_Click(object sender, EventArgs e)
+        private void Page_2_Click(object sender, EventArgs e) //create New Project
         {
-            ActivateButton(sender, RGBColors.color2);
-            lblTitleChildForm.Text = "Page2";
+            
+            if (MessageBox.Show("Do you want to Create New Project?","Create",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes) {
+
+                SharedData.State_data = "1";
+                SharedData.Last_State = "0";
+
+                ActivateButton(sender, RGBColors.color2);
+                //OpenChildForm(new Create_Project_1());
+                lblTitleChildForm.Text = "Create Cabon Footprint Test";
+                
+                
+              
+            }
+            else
+            {
+                ActivateButton(sender, RGBColors.color1);
+                OpenChildForm(new Home_Page());
+                lblTitleChildForm.Text = "Home";
+            }
         }
 
         private void Page_3_Click(object sender, EventArgs e)
@@ -156,8 +326,8 @@ namespace Cabon_Project2
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle,0x112,0xf012,0);
+           // ReleaseCapture();
+            //SendMessage(this.Handle,0x112,0xf012,0);
         }
 
         private void iconExit_Click(object sender, EventArgs e)
@@ -185,6 +355,11 @@ namespace Cabon_Project2
         private void iconMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized ;
+        }
+
+        private void iconCurrentChild_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
