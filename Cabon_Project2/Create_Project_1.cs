@@ -99,7 +99,7 @@ namespace Cabon_Project2
                 string.IsNullOrWhiteSpace(TextBox_Division.Text) ||
                 string.IsNullOrWhiteSpace(TextBox_Location.Text))
             {
-                MessageBox.Show("กรุณากรอกข้อมูลให้ครบทุกช่อง", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                System.Windows.Forms.MessageBox.Show("กรุณากรอกข้อมูลให้ครบทุกช่อง", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             /*

@@ -224,6 +224,82 @@ namespace Cabon_Project2
                 }
 
             }
+            else if (SharedData.State_data == "6") //Create Project 6
+            {
+                if (SharedData.Last_State == "5")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "6";
+                    OpenChildForm(new Create_Project_6());
+
+                }
+                else if (SharedData.Last_State != "5")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_6());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else if (SharedData.State_data == "7") //Create Project 7
+            {
+                if (SharedData.Last_State == "6")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "7";
+                    OpenChildForm(new Create_Project_7());
+
+                }
+                else if (SharedData.Last_State != "6")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_7());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else if (SharedData.State_data == "8") //Create Project 8
+            {
+                if (SharedData.Last_State == "7")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "8";
+                    OpenChildForm(new Create_Project_8());
+
+                }
+                else if (SharedData.Last_State != "7")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_8());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
+            else if (SharedData.State_data == "9") //Create Project 8
+            {
+                if (SharedData.Last_State == "8")
+                {
+                    SharedData.State_data = "0";
+                    SharedData.Last_State = "9";
+                    OpenChildForm(new Create_Project_9());
+
+                }
+                else if (SharedData.Last_State != "8")
+                {
+                    SharedData.State_data = "0";
+                    OpenChildForm(new Create_Project_9());
+
+                    // SharedData.State_data = "0";
+
+                }
+
+            }
             else
             {
 
@@ -252,6 +328,7 @@ namespace Cabon_Project2
             public static string Json_BasicMat { get; set; }
             public static string Json_Process { get; set; }
             public static string Json_Stateofoper { get; set; }
+            // Json data scor 1-3
             public static int Json_GenProcess1 { get; set; } = 0;
             public static int Json_GenProcess2 { get; set; } = 0;
             public static int Json_GenProcess3 { get; set; } = 0;
@@ -259,12 +336,26 @@ namespace Cabon_Project2
             public static int Json_GenProcess5 { get; set; } = 0;
             public static int Json_GenProcess6 { get; set; } = 0;
             public static int Json_GenProcess7 { get; set; } = 0;
+            public static int Json_GenProcess8 { get; set; } = 0;
+            public static int Json_GenProcess9 { get; set; } = 0;
+            public static int Json_GenProcess10 { get; set; } = 0;
+            public static int Json_GenProcess11 { get; set; } = 0;
+            public static int Json_GenProcess12 { get; set; } = 0;
+            public static int Json_GenProcess13 { get; set; } = 0;
+            public static int Json_GenProcess14 { get; set; } = 0;
+            public static int Json_GenProcess15 { get; set; } = 0;
+            public static int Json_GenProcess16 { get; set; } = 0;
+            public static int Json_GenProcess17 { get; set; } = 0;
+            public static int Json_GenProcess18 { get; set; } = 0;
+            // End 
+            public static int[] Json_YN_score { get; set; } = new int[20];
+            public static string[] Json_YN_description { get; set; }
         }
 
         private void Page_2_Click(object sender, EventArgs e) //create New Project
         {
             
-            if (MessageBox.Show("Do you want to Create New Project?","Create",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes) {
+            if (System.Windows.Forms.MessageBox.Show("Do you want to Create New Project?","Create", MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes) {
 
                 SharedData.State_data = "1";
                 SharedData.Last_State = "0";
@@ -272,9 +363,10 @@ namespace Cabon_Project2
                 ActivateButton(sender, RGBColors.color2);
                 //OpenChildForm(new Create_Project_1());
                 lblTitleChildForm.Text = "Create Cabon Footprint Test";
-                
-                
-              
+
+               
+
+
             }
             else
             {

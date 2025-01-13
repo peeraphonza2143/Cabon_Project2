@@ -15,28 +15,24 @@ using System.IO;
 
 namespace Cabon_Project2
 {
-    public partial class Create_Project_5 : Form
+    public partial class Create_Project_8 : Form
     {
         public int State_Button1 = 0;
+        public int State_Button2 = 0;
         public int State_Button3 = 0;
         public int State_Button4 = 0;
-        public Create_Project_5()
+       
+        public Create_Project_8()
         {
             InitializeComponent();
-            /*if (SharedData.Last_State != "3")
-            {
-                Textbox_Material.Text = Json_Create_Project.Json_Material;
-                Textbox_Build.Text = Json_Create_Project.Json_Bulid;
-                TextBox_BasicMat.Text = Json_Create_Project.Json_BasicMat;
-                TextBox_Process.Text = Json_Create_Project.Json_Process;
-                cBox_StateOper.Text = Json_Create_Project.Json_Stateofoper;
-            }*/
+     
 
-            if (SharedData.Last_State != "5")
+            if (SharedData.Last_State != "8")
             {
-                State_Button1 = Json_Create_Project.Json_GenProcess5;
-                State_Button3 = Json_Create_Project.Json_GenProcess6;
-                State_Button4 = Json_Create_Project.Json_GenProcess7;
+                State_Button1 = Json_Create_Project.Json_GenProcess8;
+                State_Button2 = Json_Create_Project.Json_GenProcess9;
+                State_Button3 = Json_Create_Project.Json_GenProcess10;
+                State_Button4 = Json_Create_Project.Json_GenProcess11;
                 if (State_Button1 == 3)
                 {
                     State_Button1 = 3;
@@ -70,7 +66,39 @@ namespace Cabon_Project2
                     BT_icon_13.IconChar = FontAwesome.Sharp.IconChar.None;
                 }
 
-               
+                if (State_Button2 == 3)
+                {
+
+                    State_Button2 = 3;
+                    BT_icon_23.BackColor = Color.Red;
+                    BT_icon_23.IconChar = FontAwesome.Sharp.IconChar.Check;
+                    BT_icon_22.BackColor = Color.White;
+                    BT_icon_21.BackColor = Color.White;
+                    BT_icon_22.IconChar = FontAwesome.Sharp.IconChar.None;
+                    BT_icon_21.IconChar = FontAwesome.Sharp.IconChar.None;
+
+                }
+                else if (State_Button2 == 2)
+                {
+                    State_Button2 = 2;
+                    BT_icon_22.BackColor = Color.Red;
+                    BT_icon_22.IconChar = FontAwesome.Sharp.IconChar.Check;
+                    BT_icon_23.BackColor = Color.White;
+                    BT_icon_21.BackColor = Color.White;
+                    BT_icon_23.IconChar = FontAwesome.Sharp.IconChar.None;
+                    BT_icon_21.IconChar = FontAwesome.Sharp.IconChar.None;
+                }
+                else if (State_Button2 == 1)
+                {
+                    State_Button2 = 1;
+                    BT_icon_21.BackColor = Color.Red;
+                    BT_icon_21.IconChar = FontAwesome.Sharp.IconChar.Check;
+                    BT_icon_23.BackColor = Color.White;
+                    BT_icon_22.BackColor = Color.White;
+                    BT_icon_23.IconChar = FontAwesome.Sharp.IconChar.None;
+                    BT_icon_22.IconChar = FontAwesome.Sharp.IconChar.None;
+                }
+
                 if (State_Button3 == 3)
                 {
                     State_Button3 = 3;
@@ -134,6 +162,7 @@ namespace Cabon_Project2
                     BT_icon_43.IconChar = FontAwesome.Sharp.IconChar.None;
                     BT_icon_42.IconChar = FontAwesome.Sharp.IconChar.None;
                 }
+
             }
         }
 
@@ -203,22 +232,23 @@ namespace Cabon_Project2
                 return;
             }*/
 
-            if (State_Button1 == 0 ||  
-                State_Button3 == 0 || State_Button4 == 0)
+            if (State_Button1 == 0 || State_Button2 == 0 ||
+                State_Button3 == 0 || State_Button4 == 0 )
             {
                 System.Windows.Forms.MessageBox.Show("กรุณากรอกข้อมูลให้ครบทุกช่อง", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            Json_Create_Project.Json_GenProcess5 = State_Button1;
-            Json_Create_Project.Json_GenProcess6 = State_Button3;
-            Json_Create_Project.Json_GenProcess7 = State_Button4;
-            SharedData.State_data = "6";
+            Json_Create_Project.Json_GenProcess8 = State_Button1;
+            Json_Create_Project.Json_GenProcess9 = State_Button2;
+            Json_Create_Project.Json_GenProcess10 = State_Button3;
+            Json_Create_Project.Json_GenProcess11 = State_Button4;
+            SharedData.State_data = "9";
         }
 
         private void Button_Back_Click(object sender, EventArgs e)
         {
 
-            SharedData.State_data = "4";
+            SharedData.State_data = "7";
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -270,7 +300,47 @@ namespace Cabon_Project2
             BT_icon_13.IconChar = FontAwesome.Sharp.IconChar.None;
         }
 
-       
+        private void BT_icon_23_Click(object sender, EventArgs e)
+        {
+            if (State_Button2 != 3)
+            {
+                State_Button2 = 3;
+                BT_icon_23.BackColor = Color.Red;
+                BT_icon_23.IconChar = FontAwesome.Sharp.IconChar.Check;
+            }
+            BT_icon_22.BackColor = Color.White;
+            BT_icon_21.BackColor = Color.White;
+            BT_icon_22.IconChar = FontAwesome.Sharp.IconChar.None;
+            BT_icon_21.IconChar = FontAwesome.Sharp.IconChar.None;
+        }
+
+        private void BT_icon_22_Click(object sender, EventArgs e)
+        {
+            if (State_Button2 != 2)
+            {
+                State_Button2 = 2;
+                BT_icon_22.BackColor = Color.Red;
+                BT_icon_22.IconChar = FontAwesome.Sharp.IconChar.Check;
+            }
+            BT_icon_23.BackColor = Color.White;
+            BT_icon_21.BackColor = Color.White;
+            BT_icon_23.IconChar = FontAwesome.Sharp.IconChar.None;
+            BT_icon_21.IconChar = FontAwesome.Sharp.IconChar.None;
+        }
+
+        private void BT_icon_21_Click(object sender, EventArgs e)
+        {
+            if (State_Button2 != 1)
+            {
+                State_Button2 = 1;
+                BT_icon_21.BackColor = Color.Red;
+                BT_icon_21.IconChar = FontAwesome.Sharp.IconChar.Check;
+            }
+            BT_icon_23.BackColor = Color.White;
+            BT_icon_22.BackColor = Color.White;
+            BT_icon_23.IconChar = FontAwesome.Sharp.IconChar.None;
+            BT_icon_22.IconChar = FontAwesome.Sharp.IconChar.None;
+        }
 
         private void BT_icon_33_Click(object sender, EventArgs e)
         {
@@ -356,5 +426,12 @@ namespace Cabon_Project2
             BT_icon_42.IconChar = FontAwesome.Sharp.IconChar.None;
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

@@ -80,6 +80,36 @@
     <Compile Include="Create_Project_5.Designer.cs">
       <DependentUpon>Create_Project_5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Create_Project_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_6.Designer.cs">
+      <DependentUpon>Create_Project_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Project_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_7.Designer.cs">
+      <DependentUpon>Create_Project_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Project_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_8.Designer.cs">
+      <DependentUpon>Create_Project_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Project_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Project_9.Designer.cs">
+      <DependentUpon>Create_Project_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +141,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Create_Project_5.resx">
       <DependentUpon>Create_Project_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_6.resx">
+      <DependentUpon>Create_Project_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_7.resx">
+      <DependentUpon>Create_Project_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_8.resx">
+      <DependentUpon>Create_Project_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Project_9.resx">
+      <DependentUpon>Create_Project_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMessageBox.aa.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home_Page.resx">
       <DependentUpon>Home_Page.cs</DependentUpon>

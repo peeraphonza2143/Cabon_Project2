@@ -92,7 +92,7 @@ namespace Cabon_Project2
              string.IsNullOrWhiteSpace(TextBox_Process.Text) ||
              string.IsNullOrWhiteSpace(cBox_StateOper.Text))
             {
-                MessageBox.Show("กรุณากรอกข้อมูลให้ครบทุกช่อง", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                System.Windows.Forms.MessageBox.Show("กรุณากรอกข้อมูลให้ครบทุกช่อง", "ข้อผิดพลาด", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             SharedData.State_data = "4";

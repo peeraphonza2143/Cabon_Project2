@@ -1,6 +1,6 @@
 ﻿namespace Cabon_Project2
 {
-    partial class Create_Project_5
+    partial class Create_Project_8
     {
         /// <summary>
         /// Required designer variable.
@@ -30,26 +30,24 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
             this.BT_icon_41 = new FontAwesome.Sharp.IconButton();
             this.BT_icon_42 = new FontAwesome.Sharp.IconButton();
             this.BT_icon_43 = new FontAwesome.Sharp.IconButton();
             this.BT_icon_31 = new FontAwesome.Sharp.IconButton();
             this.BT_icon_32 = new FontAwesome.Sharp.IconButton();
             this.BT_icon_33 = new FontAwesome.Sharp.IconButton();
+            this.BT_icon_21 = new FontAwesome.Sharp.IconButton();
+            this.BT_icon_22 = new FontAwesome.Sharp.IconButton();
+            this.BT_icon_23 = new FontAwesome.Sharp.IconButton();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.BT_icon_11 = new FontAwesome.Sharp.IconButton();
             this.BT_icon_12 = new FontAwesome.Sharp.IconButton();
             this.BT_icon_13 = new FontAwesome.Sharp.IconButton();
@@ -72,12 +70,9 @@
             this.iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -105,18 +100,18 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.CausesValidation = false;
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Controls.Add(this.panel13);
-            this.panel4.Controls.Add(this.panel14);
-            this.panel4.Controls.Add(this.panel15);
             this.panel4.Controls.Add(this.BT_icon_41);
             this.panel4.Controls.Add(this.BT_icon_42);
             this.panel4.Controls.Add(this.BT_icon_43);
             this.panel4.Controls.Add(this.BT_icon_31);
             this.panel4.Controls.Add(this.BT_icon_32);
             this.panel4.Controls.Add(this.BT_icon_33);
+            this.panel4.Controls.Add(this.BT_icon_21);
+            this.panel4.Controls.Add(this.BT_icon_22);
+            this.panel4.Controls.Add(this.BT_icon_23);
             this.panel4.Controls.Add(this.panel11);
             this.panel4.Controls.Add(this.panel12);
+            this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.BT_icon_11);
             this.panel4.Controls.Add(this.BT_icon_12);
             this.panel4.Controls.Add(this.BT_icon_13);
@@ -136,94 +131,14 @@
             this.panel4.TabIndex = 6;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
             // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(1013, 291);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(186, 68);
-            this.panel10.TabIndex = 40;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(77, 17);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(30, 31);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "1";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.panel13.Controls.Add(this.label9);
-            this.panel13.Location = new System.Drawing.Point(805, 290);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(186, 68);
-            this.panel13.TabIndex = 39;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(77, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 31);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "2";
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(592, 290);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(186, 68);
-            this.panel14.TabIndex = 38;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label14.Location = new System.Drawing.Point(77, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(30, 31);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "3";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.panel15.Controls.Add(this.label15);
-            this.panel15.Location = new System.Drawing.Point(58, 290);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(509, 69);
-            this.panel15.TabIndex = 37;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label15.Location = new System.Drawing.Point(15, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(465, 31);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "การขนถ่ายวัสดุ การขนส่ง และการจัดเก็บวัสดุ";
-            // 
             // BT_icon_41
             // 
             this.BT_icon_41.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_41.IconColor = System.Drawing.Color.White;
             this.BT_icon_41.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_41.Location = new System.Drawing.Point(1014, 517);
+            this.BT_icon_41.Location = new System.Drawing.Point(1016, 517);
             this.BT_icon_41.Name = "BT_icon_41";
-            this.BT_icon_41.Size = new System.Drawing.Size(186, 151);
+            this.BT_icon_41.Size = new System.Drawing.Size(186, 110);
             this.BT_icon_41.TabIndex = 36;
             this.BT_icon_41.UseVisualStyleBackColor = true;
             this.BT_icon_41.Click += new System.EventHandler(this.BT_icon_41_Click);
@@ -233,9 +148,9 @@
             this.BT_icon_42.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_42.IconColor = System.Drawing.Color.White;
             this.BT_icon_42.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_42.Location = new System.Drawing.Point(806, 517);
+            this.BT_icon_42.Location = new System.Drawing.Point(808, 517);
             this.BT_icon_42.Name = "BT_icon_42";
-            this.BT_icon_42.Size = new System.Drawing.Size(186, 151);
+            this.BT_icon_42.Size = new System.Drawing.Size(186, 110);
             this.BT_icon_42.TabIndex = 35;
             this.BT_icon_42.UseVisualStyleBackColor = true;
             this.BT_icon_42.Click += new System.EventHandler(this.BT_icon_42_Click);
@@ -245,9 +160,9 @@
             this.BT_icon_43.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_43.IconColor = System.Drawing.Color.White;
             this.BT_icon_43.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_43.Location = new System.Drawing.Point(592, 517);
+            this.BT_icon_43.Location = new System.Drawing.Point(594, 517);
             this.BT_icon_43.Name = "BT_icon_43";
-            this.BT_icon_43.Size = new System.Drawing.Size(187, 151);
+            this.BT_icon_43.Size = new System.Drawing.Size(187, 110);
             this.BT_icon_43.TabIndex = 34;
             this.BT_icon_43.UseVisualStyleBackColor = true;
             this.BT_icon_43.Click += new System.EventHandler(this.BT_icon_43_Click);
@@ -257,7 +172,7 @@
             this.BT_icon_31.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_31.IconColor = System.Drawing.Color.White;
             this.BT_icon_31.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_31.Location = new System.Drawing.Point(1014, 386);
+            this.BT_icon_31.Location = new System.Drawing.Point(1016, 386);
             this.BT_icon_31.Name = "BT_icon_31";
             this.BT_icon_31.Size = new System.Drawing.Size(186, 110);
             this.BT_icon_31.TabIndex = 33;
@@ -269,7 +184,7 @@
             this.BT_icon_32.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_32.IconColor = System.Drawing.Color.White;
             this.BT_icon_32.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_32.Location = new System.Drawing.Point(806, 386);
+            this.BT_icon_32.Location = new System.Drawing.Point(808, 386);
             this.BT_icon_32.Name = "BT_icon_32";
             this.BT_icon_32.Size = new System.Drawing.Size(186, 110);
             this.BT_icon_32.TabIndex = 32;
@@ -281,34 +196,68 @@
             this.BT_icon_33.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_33.IconColor = System.Drawing.Color.White;
             this.BT_icon_33.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_33.Location = new System.Drawing.Point(592, 386);
+            this.BT_icon_33.Location = new System.Drawing.Point(594, 386);
             this.BT_icon_33.Name = "BT_icon_33";
             this.BT_icon_33.Size = new System.Drawing.Size(187, 110);
             this.BT_icon_33.TabIndex = 31;
             this.BT_icon_33.UseVisualStyleBackColor = true;
             this.BT_icon_33.Click += new System.EventHandler(this.BT_icon_33_Click);
             // 
+            // BT_icon_21
+            // 
+            this.BT_icon_21.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BT_icon_21.IconColor = System.Drawing.Color.White;
+            this.BT_icon_21.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BT_icon_21.Location = new System.Drawing.Point(1016, 256);
+            this.BT_icon_21.Name = "BT_icon_21";
+            this.BT_icon_21.Size = new System.Drawing.Size(186, 110);
+            this.BT_icon_21.TabIndex = 30;
+            this.BT_icon_21.UseVisualStyleBackColor = true;
+            this.BT_icon_21.Click += new System.EventHandler(this.BT_icon_21_Click);
+            // 
+            // BT_icon_22
+            // 
+            this.BT_icon_22.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BT_icon_22.IconColor = System.Drawing.Color.White;
+            this.BT_icon_22.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BT_icon_22.Location = new System.Drawing.Point(808, 256);
+            this.BT_icon_22.Name = "BT_icon_22";
+            this.BT_icon_22.Size = new System.Drawing.Size(186, 110);
+            this.BT_icon_22.TabIndex = 29;
+            this.BT_icon_22.UseVisualStyleBackColor = true;
+            this.BT_icon_22.Click += new System.EventHandler(this.BT_icon_22_Click);
+            // 
+            // BT_icon_23
+            // 
+            this.BT_icon_23.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BT_icon_23.IconColor = System.Drawing.Color.White;
+            this.BT_icon_23.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BT_icon_23.Location = new System.Drawing.Point(594, 256);
+            this.BT_icon_23.Name = "BT_icon_23";
+            this.BT_icon_23.Size = new System.Drawing.Size(187, 110);
+            this.BT_icon_23.TabIndex = 28;
+            this.BT_icon_23.UseVisualStyleBackColor = true;
+            this.BT_icon_23.Click += new System.EventHandler(this.BT_icon_23_Click);
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(173)))), ((int)(((byte)(48)))));
             this.panel11.Controls.Add(this.label10);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(58, 517);
+            this.panel11.Location = new System.Drawing.Point(60, 517);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(509, 151);
+            this.panel11.Size = new System.Drawing.Size(509, 110);
             this.panel11.TabIndex = 27;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Adobe Heiti Std R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(16, 15);
+            this.label10.Location = new System.Drawing.Point(22, 22);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(483, 120);
+            this.label10.Size = new System.Drawing.Size(426, 60);
             this.label10.TabIndex = 1;
-            this.label10.Text = "2.ในระหว่างการเติมวัสดุ (เกิดจากการสัมผัสกับอากาศ)\r\n หรืออาจเกิดอันตรายจากการทำปฏ" +
-    "ิกิริยารุนแรงอื่น ๆ เช่น \r\nการใช้เครื่องหมุนเหวี่ยง ปฏิกิริยาที่ไม่ต่อเนื่อง\r\nหร" +
-    "ือถูกหยุดชะงัก และการผสมแบบแยกส่วน";
+            this.label10.Text = "4.สระหรือคลองในกระบวนการผลิตเว้นระยะห่างจาก\r\nสายโทรศัพท์และสายไฟ";
             // 
             // label11
             // 
@@ -324,7 +273,7 @@
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(173)))), ((int)(((byte)(48)))));
             this.panel12.Controls.Add(this.label12);
             this.panel12.Controls.Add(this.label13);
-            this.panel12.Location = new System.Drawing.Point(58, 386);
+            this.panel12.Location = new System.Drawing.Point(60, 386);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(509, 110);
             this.panel12.TabIndex = 26;
@@ -333,12 +282,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Adobe Heiti Std R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(16, 22);
+            this.label12.Location = new System.Drawing.Point(22, 22);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(449, 60);
+            this.label12.Size = new System.Drawing.Size(196, 30);
             this.label12.TabIndex = 1;
-            this.label12.Text = "1.การขนถ่ายและโหลดของเหลวไวไฟหรือก๊าซเหลวที่มี\r\nแรงดันแบบต่อเนื่องหรือแบบไม่ต่อเน" +
-    "ื่อง";
+            this.label12.Text = "3.มีกำแพงกั้นสามด้าน";
             // 
             // label13
             // 
@@ -349,12 +297,42 @@
             this.label13.Size = new System.Drawing.Size(0, 25);
             this.label13.TabIndex = 0;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(173)))), ((int)(((byte)(48)))));
+            this.panel10.Controls.Add(this.label8);
+            this.panel10.Controls.Add(this.label9);
+            this.panel10.Location = new System.Drawing.Point(60, 256);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(509, 110);
+            this.panel10.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Adobe Heiti Std R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(22, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(308, 30);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "2.มีพื้นที่ราบใกล้กับกระบวนการผลิต";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label9.Location = new System.Drawing.Point(16, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 25);
+            this.label9.TabIndex = 0;
+            // 
             // BT_icon_11
             // 
             this.BT_icon_11.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_11.IconColor = System.Drawing.Color.White;
             this.BT_icon_11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_11.Location = new System.Drawing.Point(1013, 153);
+            this.BT_icon_11.Location = new System.Drawing.Point(1015, 125);
             this.BT_icon_11.Name = "BT_icon_11";
             this.BT_icon_11.Size = new System.Drawing.Size(186, 110);
             this.BT_icon_11.TabIndex = 24;
@@ -366,7 +344,7 @@
             this.BT_icon_12.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_12.IconColor = System.Drawing.Color.White;
             this.BT_icon_12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_12.Location = new System.Drawing.Point(805, 153);
+            this.BT_icon_12.Location = new System.Drawing.Point(807, 125);
             this.BT_icon_12.Name = "BT_icon_12";
             this.BT_icon_12.Size = new System.Drawing.Size(186, 110);
             this.BT_icon_12.TabIndex = 23;
@@ -378,7 +356,7 @@
             this.BT_icon_13.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BT_icon_13.IconColor = System.Drawing.Color.White;
             this.BT_icon_13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BT_icon_13.Location = new System.Drawing.Point(591, 153);
+            this.BT_icon_13.Location = new System.Drawing.Point(593, 125);
             this.BT_icon_13.Name = "BT_icon_13";
             this.BT_icon_13.Size = new System.Drawing.Size(187, 110);
             this.BT_icon_13.TabIndex = 22;
@@ -390,7 +368,7 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(173)))), ((int)(((byte)(48)))));
             this.panel9.Controls.Add(this.label7);
             this.panel9.Controls.Add(this.label6);
-            this.panel9.Location = new System.Drawing.Point(58, 153);
+            this.panel9.Location = new System.Drawing.Point(60, 125);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(509, 110);
             this.panel9.TabIndex = 18;
@@ -401,10 +379,9 @@
             this.label7.Font = new System.Drawing.Font("Adobe Heiti Std R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(22, 22);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(439, 60);
+            this.label7.Size = new System.Drawing.Size(414, 30);
             this.label7.TabIndex = 1;
-            this.label7.Text = "1.ปฏิกิริยาที่ไม่รุนแรง เช่น ไฮโดรจิเนชัน ไฮโดรไลซิส \r\nไอโซเมอร์ไรเซชัน ซัลเฟต แล" +
-    "ะการทำให้เป็นกลาง";
+            this.label7.Text = "1.มีกำแพงล้อมรอบอุปกรณ์ที่อาจก่อให้เกิดไฟไหม้";
             // 
             // label6
             // 
@@ -420,7 +397,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
             this.panel8.Controls.Add(this.label5);
-            this.panel8.Location = new System.Drawing.Point(1013, 55);
+            this.panel8.Location = new System.Drawing.Point(1015, 27);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(186, 68);
             this.panel8.TabIndex = 17;
@@ -440,7 +417,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Location = new System.Drawing.Point(805, 54);
+            this.panel7.Location = new System.Drawing.Point(807, 26);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(186, 68);
             this.panel7.TabIndex = 16;
@@ -460,7 +437,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(592, 54);
+            this.panel6.Location = new System.Drawing.Point(594, 26);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(186, 68);
             this.panel6.TabIndex = 15;
@@ -480,7 +457,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Location = new System.Drawing.Point(58, 54);
+            this.panel5.Location = new System.Drawing.Point(60, 26);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(509, 69);
             this.panel5.TabIndex = 14;
@@ -566,31 +543,25 @@
             this.iconSplitButton1.Size = new System.Drawing.Size(23, 23);
             this.iconSplitButton1.Text = "iconSplitButton1";
             // 
-            // Create_Project_5
+            // Create_Project_8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1666, 1061);
             this.Controls.Add(this.panel1);
-            this.Name = "Create_Project_5";
+            this.Name = "Create_Project_8";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Create_Project_3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -628,25 +599,23 @@
         private FontAwesome.Sharp.IconButton BT_icon_11;
         private FontAwesome.Sharp.IconButton BT_icon_12;
         private FontAwesome.Sharp.IconButton BT_icon_13;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label15;
-        private FontAwesome.Sharp.IconButton BT_icon_41;
-        private FontAwesome.Sharp.IconButton BT_icon_42;
-        private FontAwesome.Sharp.IconButton BT_icon_43;
-        private FontAwesome.Sharp.IconButton BT_icon_31;
-        private FontAwesome.Sharp.IconButton BT_icon_32;
-        private FontAwesome.Sharp.IconButton BT_icon_33;
+        private FontAwesome.Sharp.IconButton BT_icon_21;
+        private FontAwesome.Sharp.IconButton BT_icon_22;
+        private FontAwesome.Sharp.IconButton BT_icon_23;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private FontAwesome.Sharp.IconButton BT_icon_41;
+        private FontAwesome.Sharp.IconButton BT_icon_42;
+        private FontAwesome.Sharp.IconButton BT_icon_43;
+        private FontAwesome.Sharp.IconButton BT_icon_31;
+        private FontAwesome.Sharp.IconButton BT_icon_32;
+        private FontAwesome.Sharp.IconButton BT_icon_33;
     }
 }
